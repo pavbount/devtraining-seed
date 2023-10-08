@@ -9,5 +9,5 @@
  * Modification History
  */
 dataServer {
-
+    query("ALL_TRADES", TRADE)
 }

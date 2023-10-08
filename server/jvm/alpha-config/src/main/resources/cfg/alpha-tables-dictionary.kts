@@ -10,5 +10,15 @@
  */
 
 tables {
+    table (name = "TRADE", id = 2000) {
+        sequence(TRADE_ID, "TR")
+        QUANTITY
+        PRICE
+        SYMBOL
+        DIRECTION
 
+        primaryKey {
+            TRADE_ID
+        }
+    }
 }

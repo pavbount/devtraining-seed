@@ -9,5 +9,11 @@
  * Modification History
  */
 eventHandler {
-
+    eventHandler<Trade>(name = "TRADE_INSERT") {
+        schemaValidation = false
+        onCommit { event ->
+            entityDb.insert(event.details)
+            ack()
+        }
+    }
 }
