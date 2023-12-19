@@ -11,6 +11,7 @@ systemDefinition {
         item(name = "ZeroMQProxyInboundPort", value = "5001")
         item(name = "ZeroMQProxyOutboundPort", value = "5000")
         item(name = "DbHost", value = "jdbc:postgresql://localhost:5432/postgres?user=postgres&password=postgres")
+        item(name = "DbSqlMaxPoolSize", value = "4")
         item(name = "DbMode", value = "VANILLA")
         item(name = "GenesisNetProtocol", value = "V2")
         item(name = "ResourcePollerTimeout", value = "5")
@@ -19,7 +20,6 @@ systemDefinition {
         item(name = "MetadataChronicleMapAverageValueSizeBytes", value = "1024")
         item(name = "MetadataChronicleMapEntriesCount", value = "512")
         item(name = "DaemonServerPort", value = "4568")
-        item(name = "DbSqlConnectionPoolSize", value = "4")
         item(
             name = "JVM_OPTIONS",
             value = "-XX:MaxHeapFreeRatio=70 -XX:MinHeapFreeRatio=30 -XX:+UseG1GC -XX:+UseStringDeduplication -XX:OnOutOfMemoryError=\"handleOutOfMemoryError.sh %p\""
